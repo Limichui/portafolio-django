@@ -12,21 +12,13 @@ html_base = """
 
 # Create your views here.
 def home(request):
-    return HttpResponse(html_base + """
-                        <h1>Inicio</1>
-                        """)
+    return render(request, "core/home.html")
 
 def about(request):
-    return HttpResponse(html_base + """
-                        <h1>Acerca de</1>
-                        """)
+    return render(request, "core/home.html")
 
 def portfolio(request):
-    return HttpResponse(html_base + """
-                        <h1>Portafolio</1>
-                        """)
+    return render(request, "core/portfolio.html")
 
 def contact(request):
-    return HttpResponse(html_base + """
-                        <h1>Contacto</1>
-                        """)
+    return render(request, "core/contact.html")
