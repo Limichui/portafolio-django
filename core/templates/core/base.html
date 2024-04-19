@@ -9,10 +9,10 @@
     <!-- Cabecera y navbar -->
     <h1>Mi Web Personal</h1>
     <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/acerca-de/">Acerca de</a></li>
-        <li><a href="/portafolio/">Portafolio</a></li>
-        <li><a href="/contacto/">Contacto</a></li>
+        <li><a href="{% url 'home' %}">Inicio</a></li>
+        <li><a href="{% url 'about' %}">Acerca de</a></li>
+        <li><a href="{% url 'portfolio' %}">Portafolio</a></li>
+        <li><a href="{% url 'contact' %}">Contacto</a></li>
     </ul>
     <!-- Contenido -->
     {% block content%}{% endblock %}
